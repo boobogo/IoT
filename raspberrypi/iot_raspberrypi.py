@@ -25,8 +25,8 @@ GPIO.setup(LED_PIN, GPIO.OUT)
 GPIO.output(LED_PIN, GPIO.LOW)
 
 # AWS IoT configuration
-ENDPOINT = os.getenv("AWS_IOT_ENDPOINT") #"a1kht8861k59qc-ats.iot.us-east-1.amazonaws.com"
-CLIENT_ID = os.getenv("AWS_IOT_CLIENT_ID")  #"raspberrypi-home-automation"
+ENDPOINT = os.getenv("AWS_IOT_ENDPOINT") 
+CLIENT_ID = os.getenv("AWS_IOT_CLIENT_ID")
 PATH_TO_CERT = os.getenv("AWS_IOT_CERT_PATH")
 PATH_TO_KEY = os.getenv("AWS_IOT_KEY_PATH")
 PATH_TO_ROOT = os.getenv("AWS_IOT_ROOT_PATH")
