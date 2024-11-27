@@ -1,0 +1,40 @@
+# Rules for Raspberry Pi
+raspberrypi/*.pem
+raspberrypi/*.key
+raspberrypi/*.crt
+raspberrypi/.env
+
+# Rules for backend
+backend/.aws/credentials
+backend/.aws/config
+
+# Rules for frontend
+
+# Ignore node_modules directory
+frontend/node_modules/
+
+# Ignore log files
+frontend/*.log
+
+# Ignore build directories
+frontend/dist/
+frontend/build/
+
+# Ignore environment variable files
+frontend/.env
+
+# Ignore OS-specific files
+frontend/.DS_Store
+frontend/Thumbs.db
+
+# Ignore IDE-specific files
+frontend/.vscode/
+frontend/.idea/
+frontend/*.suo
+frontend/*.ntvs*
+frontend/*.njsproj
+frontend/*.sln
+frontend/*.sw?
+
+# Ignore coverage reports
+frontend/coverage/

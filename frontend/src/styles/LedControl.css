@@ -1,0 +1,46 @@
+/* LedControl.css */
+
+
+.header {
+  font-size: 32px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.card {
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  width: 80%;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.title {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.status-label {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+.led-status {
+  width: 30px;
+  height: 30px;
+  border-radius: 15px;
+  margin: 20px auto;
+  background-color: red; /* Initial color for LED OFF */
+}
+
+.button {
+  background-color: #007bff;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}

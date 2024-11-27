@@ -1,0 +1,52 @@
+/* Home.css */
+.home {
+  padding: 20px;
+}
+
+.home .picture {
+  margin: 20px 0;
+}
+
+.home img {
+  max-width: 50%;
+  height: auto;
+  border-radius: 50%;
+  
+}
+
+.home .container {
+  padding: 5%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+}
+
+.home p {
+  font-family: 'Arial', sans-serif;
+  font-size: 0.8rem;
+  width: 100%;
+  line-height: 1.6;
+  font-size: 1.2rem;
+  text-align: justify;
+}
+
+@media screen and (min-width: 800px) {
+  .home .container {
+    flex-direction: row;
+  }
+
+  .home p {
+    width: 100%;
+    font-size: 1.2 rem;
+    text-align: justify;
+  }
+
+  .home img {
+    max-width: 50%;
+    height: auto;
+    
+  }
+    
+}

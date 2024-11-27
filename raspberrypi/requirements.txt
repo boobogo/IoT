@@ -1,0 +1,4 @@
+RPi.GPIO
+awsiotsdk
+adafruit-circuitpython-dht
+adafruit-blinka
