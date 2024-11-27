@@ -62,4 +62,4 @@ jobs:
           docker rm backend || true
           docker rm frontend || true
           docker run -d --name backend -e AWS_ACCESS_KEY_ID=${{ secrets.AWS_ACCESS_KEY_ID }} -e AWS_SECRET_ACCESS_KEY=${{ secrets.AWS_SECRET_ACCESS_KEY }} -e AWS_DEFAULT_REGION=${{ secrets.AWS_DEFAULT_REGION }} -p 8000:8000 ${{ secrets.DOCKER_USERNAME }}/my-backend:latest
-          docker run -d --name frontend -p 80:80 ${{ secrets.DOCKER_USERNAME }}/my-frontend:latest
+          docker run -d --name frontend -p 8080:80 ${{ secrets.DOCKER_USERNAME }}/my-frontend:latest
