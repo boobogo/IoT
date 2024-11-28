@@ -59,7 +59,7 @@ const IoT = () => {
                 <button className="switch" onClick={toggleLed}>
                     {isLedOn ? 'Turn OFF' : 'Turn ON'}
                 </button>
-                <p>LED is now {isLedOn ? 'ON' : 'OFF'}</p>
+                <p>LED is {isLedOn ? 'ON' : 'OFF'}</p>
             </div>
         </div>
       </div>
