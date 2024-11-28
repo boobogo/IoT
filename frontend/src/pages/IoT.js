@@ -9,7 +9,7 @@ const IoT = () => {
 
     const fetchSensorData = async () => {
         try {
-            const response = await fetch('https://pi.servebeer.com/temperature');
+            const response = await fetch('https://08r17i1i51.execute-api.us-east-1.amazonaws.com/prod/temperature');
             if (!response.ok) {
                 throw new Error('Network response was not ok');
             }
@@ -24,7 +24,7 @@ const IoT = () => {
         const newLedState = !isLedOn;
         setIsLedOn(newLedState);
         try {
-            const response = await fetch('https://pi.servebeer.com/control-led', {
+            const response = await fetch('https://08r17i1i51.execute-api.us-east-1.amazonaws.com/prod/control-led', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
