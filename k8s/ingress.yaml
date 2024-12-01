@@ -1,0 +1,16 @@
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: front-end-ingress
+spec:
+  rules:
+  - host: bold.servebeer.com  # No-IP domain
+    http:
+      paths:
+      - path: /
+        pathType: Prefix
+        backend:
+          service:
+            name: front-end-service  #Kubernetes service name
+            port:
+              number: 80  # Port the service is exposed on
