@@ -32,7 +32,22 @@
   height: auto;
   border-radius: 50%;
   margin-top: 50px;
-  
+}
+.left-align-stack {
+  text-align: left;
+  margin-left: 10px;
+  margin-bottom: 20px;
+}
+.projects h4 {
+  text-align: left;
+  margin-top: 20px;
+  padding: 5px;
+}
+.projects li {
+  margin-bottom: 5px; 
+}
+.project-link {
+  margin-bottom: 20px;
 }
 
 @media (min-width: 800px) {

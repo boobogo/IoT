@@ -6,21 +6,12 @@ function Contact() {
   return (
     <div className="contact">
       <h2>Contact Me</h2>
-      <form className="contact-form">
-        <div>
-          <label htmlFor="name">Name:</label>
-          <input type="text" id="name" name="name" />
-        </div>
-        <div>
-          <label htmlFor="email">Email:</label>
-          <input type="email" id="email" name="email" />
-        </div>
-        <div>
-          <label htmlFor="message">Message:</label>
-          <textarea id="message" name="message" />
-        </div>
-        <button type="submit">Send Message</button>
-      </form>
+      <div className="contact-info">
+        <p><strong>Name:</strong> Bold-Erdene Bayaraa</p>
+        <p><strong>Email:</strong> bolderdenebayaraa97@gmail.com</p>
+        <p><strong>Phone:</strong> +420 773 632 299</p>
+        <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/bold-erdene-bayaraa-152513256/">Bold-Erdene Bayaraa</a></p>
+      </div>
     </div>
   );
 }

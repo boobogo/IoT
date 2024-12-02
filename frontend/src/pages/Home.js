@@ -12,13 +12,11 @@ function Home() {
           <img src={profileImage} alt="home" />
         </div>
         <p>
-          I am a passionate developer with expertise in IoT, cloud computing (AWS), 
-          full-stack development, and machine learning. My journey as a developer has been 
-          driven by a deep curiosity for building innovative solutions, from smart home 
-          automation systems to scalable web applications and intelligent algorithms. 
-          Here, you can explore some of my projects, showcasing my work across these diverse domains, 
-          and get in touch with me to discuss potential collaborations or shared interests. 
-          Let's build something amazing together!
+          Hi, I’m Bold-Erdene, a passionate IT graduate specializing in IoT, Web Development, 
+          Cloud Computing, DevOps, Data Analysis and Algorithmic Trading.
+          As a recent graduate in Information Technology, I am driven by a passion for technology and innovation. 
+          From developing smart home IoT systems to crafting algorithmic trading strategies using machine learning, 
+          I thrive at the intersection of creativity and technical expertise.
         </p>
       </div>
     </div>
