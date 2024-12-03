@@ -1,3 +1,4 @@
+/* General Styles */
 .iot {
     text-align: center;
 }
@@ -13,7 +14,6 @@
     margin-top: 20px;
     gap: 30px;
     align-items: center;
-    
 }
 
 .dashboard-item {
@@ -21,35 +21,189 @@
     border: 1px solid #ddd;
     border-radius: 8px;
     padding: 20px;
-    width: 45%;
+    width: 100%; /* Set to full width on mobile */
+    max-width: 500px; /* Prevent overly wide content */
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
 }
 
-
+/* Sensor Data Section */
 .sensor-data {
-    margin-top: 10px;
+    margin-top: 20px;
+    padding: 15px;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: left;
+    width: 100%;
+    max-width: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
 }
 
-.switch {
-    margin-top: 10px;
+.sensor-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px 0;
+    font-size: 16px;
+}
+
+.sensor-label {
+    font-weight: bold;
+    color: #555;
+}
+
+.sensor-value {
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.sensor-value.temperature {
+    color: #007bff; /* Blue for temperature */
+}
+
+.sensor-value.humidity {
+    color: #28a745; /* Green for humidity */
+}
+
+.fetch-data-button {
+    margin-top: 15px;
     padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #fff;
     background-color: #007bff;
-    color: white;
     border: none;
-    border-radius: 4px;
+    border-radius: 5px;
     cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
 }
 
-.switch:hover {
+.fetch-data-button:hover {
     background-color: #0056b3;
+    transform: scale(1.05);
 }
 
+.fetch-data-button:active {
+    background-color: #004085;
+}
+
+/* LED Control Section */
+
+.led-container {
+    margin-top: 5px;
+    padding: 15px;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 100%;
+    max-width: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 80%;
+}
+
+.led-control {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 20px;
+    border: 2px solid #ccc;
+    border-radius: 25px;
+    width: 60%;
+    cursor: pointer;
+    transition: background-color 0.3s ease, border-color 0.3s ease;
+    font-weight: bold;
+    font-size: 16px;
+    margin-top: 20px;
+    
+}
+
+.led-control.on {
+    background-color: #d4f8d4; /* Light green */
+    border-color: #34c759;    /* Green border */
+    color: #34c759;
+}
+
+.led-control.off {
+    background-color: #ffd4d4; /* Light red */
+    border-color: #ff3b30;    /* Red border */
+    color: #ff3b30;
+}
+
+.led-indicator {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+    border-radius: 50%;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.led-indicator.led-on {
+    background-color: #34c759; /* Green */
+    box-shadow: 0 0 10px #34c759;
+}
+
+.led-indicator.led-off {
+    background-color: #ff3b30; /* Red */
+    box-shadow: 0 0 10px #ff3b30;
+}
+
+.led-status {
+    font-weight: bold;
+}
+
+.led-status.on {
+    color: #34c759;
+}
+
+.led-status.off {
+    color: #ff3b30;
+}
+
+/* Media Query for screens with a width of 800px or more */
 @media screen and (min-width: 800px) {
+    /* Layout for larger screens (tablet and desktop) */
     .container {
-        flex-direction: row;
-        align-items: stretch ;
+        flex-direction: row; /* Stack horizontally for larger screens */
+        justify-content: space-evenly;
+        align-items: stretch;
     }
-    .sensor-data button{
-        margin-top: 20px;
+    
+    .dashboard-item {
+        width: 45%; /* Set a fixed width for dashboard items */
+        max-width: none; /* Remove the max-width restriction */
+    }
+    
+    /* Modify button sizes for larger screens */
+    .fetch-data-button {
+        padding: 12px 25px; /* Larger padding for bigger screens */
+        font-size: 18px; /* Larger text size */
+    }
+
+    .sensor-item {
+        font-size: 18px; /* Larger font for better visibility on desktops */
+    }
+
+    .sensor-value {
+        font-size: 20px; /* Bigger values for readability */
+    }
+
+    /* Modify LED control button appearance */
+    .led-control {
+        padding: 10px 25px;
+        font-size: 16px;
     }
 }

@@ -1,7 +1,7 @@
 // Home.js
 import React from 'react';
 import '../styles/Home.css';
-import profileImage from '../images/profile.jpg'; // Import the image
+import profileImage from '../images/profile.jpeg'; // Import the image
 
 function Home() {
   return (
