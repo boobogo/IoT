@@ -46,7 +46,7 @@ function Projects() {
             <li>Data Processing: Pandas, NumPy</li>
             <li>Machine Learning Libraries: Scikit-learn, Pytorch</li>
             <li>Reinforcement Learning: OpenAI Gym, Stable Baselines3, Finlib</li>
-            <li>Trading/Backtesting Platforms: MetaTrader 4/5 (via MQL4/MQL5)</li>
+            <li>Trading/Backtesting Platforms: MetaTrader 4/5, Python</li>
           </ul>
           {/* <Link to="/algo" className="project-link">View Project</Link> */}
           <img src={algoImage} alt="algo"/> 
