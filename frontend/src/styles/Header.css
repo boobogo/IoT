@@ -1,6 +1,6 @@
 /* Header.css */
 .header {
-  background-color: #333;
+  background-color: #000000d7;
   padding: 20px;
   color: white;
   display: flex;
@@ -26,23 +26,37 @@
 .nav-list a {
   color: white;
   text-decoration: none;
+  transition: color 0.3s, transform 0.3s ease;
+  display: inline-block;
 }
 
 .nav-list a:hover {
-  text-decoration: underline;
+  color: #0056b3;
+  transform: scale(1.1);
 }
 
 .logo {
-    max-width: 20%;
+    max-width: 100px;
     height: auto;
   }
 
-@media (min-width: 800px) {
-  .header {
-    flex-direction: row;
-    justify-content: space-between;
-  }
+.header .name{
+  text-decoration: none; 
+  color: inherit;
+  display: inline-block;
+  font-size: 20px;
+  transition: transform 0.3s ease;
+  margin: 2px 0 8px 0;
+  text-align: center;
+}
+.name:hover {
+  transform: scale(1.05);
+}
 
+@media (min-width: 800px) {
+  .navbar{
+    display: inline;
+  }
   .nav-list {
     width: 80%;
     flex-direction: row;
@@ -52,10 +66,32 @@
 
   .nav-list li {
     display: inline;
+    border-right: 1px solid #ffffff;
+    padding-right: 15px;
   }
+
+  .nav-list li:last-child {
+    border-right: none;
+  }
+
   .logo {
-    max-width: 25%;
+    display: flex;
+    max-width: 150px;
     height: auto;
-    margin-right: 40vw;
+    /* margin-right: 40vw; */
   }
+  .header {
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px 20px;
+  }
+
+  .header .name{
+    margin: 2vw 10vw 2vw 0;
+  }
+  .header .name{
+    text-align: left;
+  }
+
 }

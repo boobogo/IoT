@@ -1,19 +1,61 @@
 /* Footer.css */
 .footer {
-    background-color: #333;
-    color: white;
-    padding: 20px;
-    text-align: center;
-    margin-top: auto;
-  }
-  
-  .footer-content {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 10px;
-  }
-  .footer-content p {
+    background-color: #000000d7;
+    color: white;
+    padding: 20px;
+    margin-top: auto;
     font-size: 1.2rem;
+    list-style-type: none;
   }
+
+  .footer .social-media a {
+    color: #ffffff; 
+    text-decoration: none;
+    list-style-type: none;
+    transition: color 0.3s, transform 0.3s ease;
+    display: inline-block;
+  }
+
+  .footer .linkedin:hover {
+    color: #0077B5;
+    transform: scale(1.1); 
+  }
+  .footer .facebook:hover {
+    color: #4267B2;
+    transform: scale(1.1); 
+  }
+  .footer .instagram:hover {
+    color: #E1306C;
+    transform: scale(1.1); 
+  }
+
+  .footer .social-media{
+     list-style-type: none;
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+  }
+  .footer .social-media li{
+    margin-top: 10px;
+  }
+
+
+@media screen and (min-width: 800px) {
+    .footer{
+      flex-direction: row;
+      justify-content: space-evenly;
+    }
+    .footer .social-media{
+      flex-direction: row;
+      justify-content: space-between;
+    }
+    .footer .social-media li{
+      margin-right: 10px;
+      margin-bottom: 0px;
+    }
+  
+}
   

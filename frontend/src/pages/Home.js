@@ -8,9 +8,7 @@ function Home() {
     <div className="home">
       <h2>Welcome to My Portfolio!</h2>
       <div className='container'>
-        <div className="picture">
-          <img src={profileImage} alt="home" />
-        </div>
+        <img src={profileImage} alt="home" />
         <p>
           Hi, I’m Bold-Erdene, a passionate IT graduate specializing in IoT, Web Development, 
           Cloud Computing, DevOps, Data Analysis and Algorithmic Trading.

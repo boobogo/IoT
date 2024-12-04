@@ -26,8 +26,8 @@ function Projects() {
             <li>Cloud Services: AWS (EC2, IoT Core, TimeStream, SNS, Lambda, IAM)</li>
             <li>DevOps: Docker, GitHub Actions, Kubernetes (Minikube)</li>
           </ul>
-          <Link to="/IoT" className="project-link">View Project</Link>
-          <a href="https://github.com/boobogo/project">Project repo</a>
+          <Link to="/IoT" className="project-link"> &#8658; View Dashboard</Link>
+          <a href="https://github.com/boobogo/project" target="_blank" rel="noopener noreferrer" className='project-link'>&#8658; Project repo</a>
           <img src={iotImage} alt="iot"/> 
         </div>
         <div className="project-card">
