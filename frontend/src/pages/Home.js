@@ -10,9 +10,9 @@ function Home() {
       <div className='container'>
         <img src={profileImage} alt="home" />
         <p>
-          Hi, I’m Bold-Erdene, a passionate IT graduate specializing in IoT, Web Development, 
+          My name is Bold-Erdene, I'm an IT enthusiast specializing in IoT, Web Development, 
           Cloud Computing, DevOps, Data Analysis and Algorithmic Trading.
-          As a recent graduate in Information Technology, I am driven by a passion for technology and innovation. 
+          As a recent graduate in IT, I'm driven by a passion for technology and innovation. 
           From developing smart home IoT systems to crafting algorithmic trading strategies using machine learning, 
           I thrive at the intersection of creativity and technical expertise.
         </p>
