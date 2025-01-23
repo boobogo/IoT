@@ -27,8 +27,8 @@ function Projects() {
             <li>DevOps: Docker, GitHub Actions, Kubernetes (Minikube)</li>
           </ul>
           <div className="project-links">
-            <Link to="/IoT" className="project-link"> &#8658; View Dashboard</Link>
-            <a href="https://github.com/boobogo/project" target="_blank" rel="noopener noreferrer" className='project-link'>&#8658; Project repo</a>
+            <Link to="/IoT" className="project-link"> &#8658; View</Link>
+            <a href="https://github.com/boobogo/project" target="_blank" rel="noopener noreferrer" className='project-link'>&#8658; GitHub</a>
             <img src={iotImage} alt="iot"/>
           </div>
         </div>
@@ -50,8 +50,11 @@ function Projects() {
             <li>Reinforcement Learning: OpenAI Gym, Stable Baselines3, Finlib</li>
             <li>Trading/Backtesting Platforms: MetaTrader 4/5, Python</li>
           </ul>
-          {/* <Link to="/algo" className="project-link">View Project</Link> */}
-          <img src={algoImage} alt="algo"/> 
+          <div className="project-links">
+            <Link to="/IoT" className="project-link"> &#8658; View</Link>
+            <a href="https://github.com/boobogo/trade" target="_blank" rel="noopener noreferrer" className='project-link'>&#8658; GitHub</a>
+            <img src={algoImage} alt="algo"/>
+          </div>
         </div>
       </div>
     </div>

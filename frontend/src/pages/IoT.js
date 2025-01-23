@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import '../styles/IoT.css';
 
+
 const IoT = () => {
     const [temperature, setTemperature] = useState('--');
     const [humidity, setHumidity] = useState('--');
@@ -77,6 +78,7 @@ const IoT = () => {
                     
                 </div>
             </div>
+            
         </div>
     );
 };

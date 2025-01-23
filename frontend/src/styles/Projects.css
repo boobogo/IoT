@@ -57,7 +57,7 @@
   text-align: left;
 }
 .project-link:hover {
-  transform: scale(1.05);
+  transform: scale(1.01);
   color: #0056b3;
 }
 

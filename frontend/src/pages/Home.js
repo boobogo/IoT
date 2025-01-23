@@ -6,15 +6,14 @@ import profileImage from '../images/profile.jpeg'; // Import the image
 function Home() {
   return (
     <div className="home">
-      <h2>Welcome to My Portfolio!</h2>
+      <h2>Welcome to My Portfolio Page!</h2>
       <div className='container'>
         <img src={profileImage} alt="home" />
         <p>
-          My name is Bold-Erdene, I'm an IT enthusiast specializing in IoT, Web Development, 
-          Cloud Computing, DevOps, Data Analysis and Algorithmic Trading.
-          As a recent graduate in IT, I'm driven by a passion for technology and innovation. 
-          From developing smart home IoT systems to crafting algorithmic trading strategies using machine learning, 
-          I thrive at the intersection of creativity and technical expertise.
+          I’m an IT graduate with a strong interest in data science and software development. I analyze data and build predictive models using machine learning. 
+          I also have experience developing web applications, working on both front-end and back-end systems. Additionally, 
+          I have foundational knowledge in cloud computing, DevOps, and IoT. I’m particularly passionate about algorithmic trading and
+          focus on automating and optimizing trading strategies through data-driven approaches.
         </p>
       </div>
     </div>

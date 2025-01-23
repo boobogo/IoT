@@ -2,7 +2,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import '../styles/Header.css';
-import logoImage from '../images/raspberry-logo.png'; // Import the image
+// import logoImage from '../images/raspberry-logo.png'; // Import the image
 
 function Header() {
   return (
