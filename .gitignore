@@ -3,6 +3,7 @@ raspberrypi/*.pem
 raspberrypi/*.key
 raspberrypi/*.crt
 raspberrypi/.env
+raspberrypi/venv
 
 # Rules for backend
 backend/.aws/credentials
