@@ -51,7 +51,7 @@ function Projects() {
             <li>Trading/Backtesting Platforms: MetaTrader 4/5, Python</li>
           </ul>
           <div className="project-links">
-            <Link to="/IoT" className="project-link"> &#8658; View</Link>
+            {/* <Link to="/IoT" className="project-link"> &#8658; View</Link> */}
             <a href="https://github.com/boobogo/trade" target="_blank" rel="noopener noreferrer" className='project-link'>&#8658; GitHub</a>
             <img src={algoImage} alt="algo"/>
           </div>
