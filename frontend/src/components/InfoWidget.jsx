@@ -43,7 +43,7 @@ export default function InfoWidget() {
     if (weatherDesc.includes("rain")) return "☂";
     if (weatherDesc.includes("snow")) return "❆";
     if (weatherDesc.includes("wind")) return "💨";
-    return "🌍"; // Default icon
+    return "";
   };
 
   return (
