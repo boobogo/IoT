@@ -7,7 +7,9 @@ import Home from './pages/Home';
 import Projects from './pages/Projects';
 import Contact from './pages/Contact';
 import IoT from './pages/IoT';
+import Trade from './pages/Trade';
 import './styles/global.css';
+
 
 function App() {
   return (
@@ -20,6 +22,7 @@ function App() {
             <Route path="/projects" element={<Projects />} />
             <Route path="/contact" element={<Contact />} />
             <Route path="/IoT" element={<IoT />} />
+            <Route path="/trade" element={<Trade />} />
           </Routes>
         </div>
         <Footer />

@@ -1,14 +1,7 @@
-/* Home.css */
-.home {
-  padding: 20px;
-}
-
-.home img {
+.container img {
   max-width: 300px;
   height: auto;
-  border-radius: 50%;
-  box-shadow: 0 2px 20px rgba(0, 0, 0, 0.5);
-
+  border-radius: 2%;
 }
 
 .home .container {
@@ -20,16 +13,13 @@
   gap: 20px;
 }
 
-.home p {
+.container p {
   width: 100%;
   line-height: 1.6;
   font-size: 1.2rem;
   text-align: justify;
   color: #080808;
   padding: 30px;
-  border-radius: 5%;
-  box-shadow: 0 2px 20px rgba(0, 0, 0, 0.5);
-  margin-bottom: 50px;
 }
 
 
@@ -38,20 +28,13 @@
     flex-direction: row;
     align-items: center;
     gap: 50px;
+    margin-bottom: 100px;
   }
 
-  .home p {
+  .container p {
     width: 100%;
     max-width: 500px;
     font-size: 1.2 rem;
     text-align: justify;
   }
-
-  .home img {
-    max-width: 400px;
-    width: 100%;
-    height: auto;
-    border-radius: 50%;
-  }
-    
 }

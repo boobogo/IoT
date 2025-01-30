@@ -1,0 +1,26 @@
+.jokeText{
+    font-size: 1rem;
+    font-style: italic;
+    width: 100%;
+}
+
+.jokeContainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    padding: 40px;
+    height: auto;
+}
+.jokeHeader{
+    margin-bottom: 10px;
+    font-size: 1.3rem;
+}
+
+@media (min-width: 800px) {
+    .jokeText{
+        font-size: 1.3rem;
+        width: 40%;
+    }
+  }

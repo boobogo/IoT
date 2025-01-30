@@ -1,0 +1,32 @@
+.info-widget {
+    display: flex;
+    justify-content: flex-end;
+    position: absolute;
+    top: 150px; 
+    right: 5px;
+    z-index: 100; /* Ensures it's on top of other content */
+  }
+  
+  .info-widget p {
+    width: 100%;
+    font-size: 0.7rem;
+    text-align: right;
+    color: #080808;
+    padding: 2px;
+    margin: 0 5px; /* Adds space between each <p> */
+    white-space: nowrap; /* Prevents text from wrapping */
+  }
+
+@media screen and (min-width: 800px) {
+    .info-widget {
+        top: 50px; /* Adjust this based on the height of your navbar */
+        right: 20px; /* Adjust if needed for spacing from the right edge */
+        z-index: 100; /* Ensures it's on top of other content */
+    }
+  
+    .info-widget p {
+      font-size: 0.8rem;
+    }
+    
+}
+  

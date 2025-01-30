@@ -7,11 +7,6 @@ import '../styles/Header.css';
 function Header() {
   return (
     <header className="header">
-      <Link to="/" className="name">
-        <p>
-          <strong>Bold-Erdene</strong><br></br><strong>Bayaraa</strong>
-        </p>
-      </Link>
       <nav className="navbar">
         <ul className="nav-list">
           <li><Link to="/">Home</Link></li>

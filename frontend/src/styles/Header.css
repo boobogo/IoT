@@ -61,7 +61,6 @@
     width: 80%;
     flex-direction: row;
     gap: 40px; /* Increased gap */
-    margin-right: 10vw; /* Using viewport width unit for responsiveness */
   }
 
   .nav-list li {

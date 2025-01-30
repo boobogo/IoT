@@ -1,0 +1,22 @@
+.stock-ticker-container {
+    background-color: grey;
+    color: black;
+    padding: 10px 0;
+    font-size: 18px;
+    font-weight: bold;
+    white-space: nowrap;
+  }
+  
+  .stock-item {
+    display: inline-block;
+    margin-right: 20px;
+  }
+  
+  .up {
+    color: #00ff00; /* Green for rising stocks */
+  }
+  
+  .down {
+    color: #ff3333; /* Red for declining stocks */
+  }
+  

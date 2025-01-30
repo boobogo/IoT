@@ -8,7 +8,7 @@ import { faFacebook, faLinkedin, faInstagram  } from '@fortawesome/free-brands-s
 function Footer() {
   return (
     <footer className="footer">
-      <p>© 2024 Bold-Erdene Bayaraa</p>
+      <p>© 2025 Bold-Erdene Bayaraa</p>
       <ul className="social-media">
         <li><a href="https://www.linkedin.com/in/bold-erdene-bayaraa-152513256/" target="_blank" rel="noopener noreferrer" className='linkedin'><FontAwesomeIcon icon={faLinkedin} size="2x" /></a></li>
         <li><a href="https://www.facebook.com/Bolderdene.Bayaraa" target="_blank" rel="noopener noreferrer" className='facebook'><FontAwesomeIcon icon={faFacebook} size="2x" /></a></li>
