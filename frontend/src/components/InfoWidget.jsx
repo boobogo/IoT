@@ -34,18 +34,6 @@ export default function InfoWidget() {
     }
   };
 
-  const getWeatherEmoji = (description) => {
-    if (!description || !weather) return "❓";
-    const weatherDesc = description.toLowerCase();
-
-    if (weatherDesc.includes("clear")) return "☀";
-    if (weatherDesc.includes("cloud")) return "☁";
-    if (weatherDesc.includes("rain")) return "☂";
-    if (weatherDesc.includes("snow")) return "❆";
-    if (weatherDesc.includes("wind")) return "💨";
-    return "";
-  };
-
   return (
     <div className="info-widget">
         <p>
@@ -60,7 +48,7 @@ export default function InfoWidget() {
       <p>{time.toLocaleTimeString("en-US", { timeZone: "Europe/Prague",hour12: false, hour: '2-digit', minute: '2-digit' })}</p>
       {weather ? (
         <p>
-          {weather.main.temp}°C {getWeatherEmoji(weather.weather[0].description)}
+          {weather.main.temp}°C
         </p>
       ) : (
         <p>Loading weather...</p>

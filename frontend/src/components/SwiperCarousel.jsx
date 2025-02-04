@@ -7,14 +7,13 @@ import "swiper/css/pagination";
 import "swiper/css/free-mode";
 import "../styles/SwiperCarousel.css";
 import CarouselElement from "./CarouselElement";
-import img1 from '../images/profile2.jpg'; // Import the image
+// import img1 from '../images/profile2.webp'; // Import the image
 import img2 from '../images/iot.webp'; // Import the image
-import img3 from '../images/algo1.jpg'; // Import the image
+import img3 from '../images/algo1.webp'; // Import the image
 
 export default function SwiperCarousel() {
 
   const data = [
-    { img: img1, text: "", title: "Welcome to my Portfolio!", link: "/" },
     { img: img2, text: "Smart home IoT system with remote control & monitoring via a React web app. Integrates IoT devices, AWS, and DevOps for end-to-end system design.", title: "IoT Smart Home", link: "/IoT" },
     { img: img3, text: "Intelligent trading bot using machine learning to analyze market data, predict price movements, and execute trades.", title: "Algorithmic Trading", link: "/trade" },
   ];

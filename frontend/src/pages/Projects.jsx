@@ -12,7 +12,7 @@ function Projects() {
         "Smart home IoT system with remote control & monitoring via a React web app. Integrates IoT devices, AWS, and DevOps for end-to-end system design.",
       skills: "Skills: IoT, AWS, Web Development, DevOps",
       techStack: [
-        { category: "Frontend", technologies: ["React", "Nginx"] },
+        { category: "Frontend", technologies: ["React"] },
         { category: "Backend", technologies: ["AWS Lambda", "API Gateway"] },
         { category: "IoT", technologies: ["Raspberry Pi", "MQTT", "AWS IoT Core"] },
         { category: "Cloud Services", technologies: ["AWS (EC2, IoT Core, TimeStream, SNS, Lambda, IAM)"] },

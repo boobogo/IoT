@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 export default function ProjectCard({ title, description, skills, techStack, link, github, image }) {
   return (
     <div className="project-card">
-      <h3>{title}</h3>
+      <h3 className="font-bold">{title}</h3>
       <p>{description}</p>
       <p><em>{skills}</em></p>
 

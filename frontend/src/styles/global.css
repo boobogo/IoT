@@ -6,14 +6,30 @@
   box-sizing: border-box;
 }
 
+:root {
+  --background-color: hsl(0, 0%, 99%);
+  --background-color-secondary: hsl(0, 0%, 94%);
+  --background-color-tertiary: hsl(0, 0%, 89%);
+  --text-color: hsl(0, 0%, 10%);
+}
+
+[data-theme='dark'] {
+  --background-color: hsl(0, 0%, 15%);
+  --background-color-secondary: hsl(0, 0%, 20%);
+  --background-color-tertiary: hsl(0, 0%, 25%);
+  --text-color: hsl(0, 0%, 98%);
+}
+
 body {
-  background-color: #f9f9f9;
+  background-color: var(--background-color);
+  color: var(--text-color);
   background-repeat: no-repeat;
   background-size: cover;
   font-family: "Nunito", serif;
   font-optical-sizing: auto;
   font-weight: 300;
   font-style: normal;
+  
 }
 
 .app {
@@ -22,3 +38,4 @@ body {
   display: flex;
   flex-direction: column;
 }
+

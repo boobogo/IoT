@@ -5,26 +5,25 @@
     align-items: center;
     width: 100%;
     height: 600px;
-    background-color: rgb(255, 255, 255);
-    
+    background-color: var(--background-color-secondary);
+    color: var(--text-color);
 }
 
 .carousel-img{
     width: 80%;
     height: 60%;
     object-fit: cover;
-    padding: 30px;
+    padding: 10px;
 }
 .carouselElementText{
     width: 80%;
     height: 60%;
-    
     padding: 30px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     text-align: justify;
-    gap: 40px;
+    gap: 20px;
 }
 .carouselElementText p{
     width: 100%;
@@ -45,19 +44,18 @@
     .elementContainer{
         flex-direction: row;
         margin: 0px;
-        gap: 30px;
     }
 
     .carousel-img{
-        width: 40%;
-        height: 80%;
+        width: 100%;
+        height: 100%;
         object-fit: cover;
-        padding: 0px;
+        padding: 10px;
     }
     .carouselElementText{
-        width: 40%;
+        width: 60%;
         height: 60%;
-        padding: 30px;
+        padding: 80px;
         display: flex;
         flex-direction: column;
         justify-content: center;

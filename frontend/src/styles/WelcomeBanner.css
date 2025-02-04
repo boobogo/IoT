@@ -1,0 +1,114 @@
+/* WelcomeBanner.css */
+.welcome-banner {
+    margin-top: 30px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 500px;
+    background: linear-gradient(135deg, #000000, #333333); 
+    color: white;
+    text-align: center;
+    padding: 20px;
+    overflow: hidden; 
+  }
+  
+  .welcome-title {
+    font-size: 4rem; /* Larger font size */
+    font-weight: bold;
+    margin-bottom: 1rem;
+    opacity: 0; /* Start invisible for animation */
+    text-transform: uppercase; /* Uppercase text */
+    letter-spacing: 0.2rem; /* Spaced-out letters */
+    animation: fadeIn 1.5s ease-out 0.5s forwards, float 3s ease-in-out infinite 2s; /* Fade-in and floating effect */
+  }
+  
+  .welcome-subtitle {
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+    opacity: 0; /* Start invisible for animation */
+    transform: translateY(20px); /* Start slightly below for slide-up effect */
+    animation: slideUp 1.5s ease-out 1s forwards, glow 2s ease-in-out infinite 2.5s; /* Slide-up and glowing effect */
+  }
+  
+  .welcome-button {
+    padding: 12px 24px;
+    font-size: 1rem;
+    font-weight: bold;
+    color: #000000; /* Black text */
+    background: white;
+    border: 2px solid white; /* White border */
+    border-radius: 25px;
+    cursor: pointer;
+    opacity: 0; /* Start invisible for animation */
+    transition: background 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+    animation: fadeIn 1.5s ease-out 1.5s forwards, pulse 2s ease-in-out infinite 3s; /* Fade-in and pulsing effect */
+  }
+  
+  .welcome-button:hover {
+    background: #000000; /* Black background on hover */
+    color: white; /* White text on hover */
+    transform: scale(1.1); /* Slightly scale up on hover */
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.5); /* Glow effect on hover */
+  }
+  
+  /* Animation Keyframes */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+  @keyframes slideUp {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  @keyframes float {
+    0% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-10px);
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
+  
+  @keyframes glow {
+    0% {
+      text-shadow: 0 0 5px rgba(255, 255, 255, 0.5);
+    }
+    50% {
+      text-shadow: 0 0 20px rgba(255, 255, 255, 0.9);
+    }
+    100% {
+      text-shadow: 0 0 5px rgba(255, 255, 255, 0.5);
+    }
+  }
+  
+  @keyframes pulse {
+    0% {
+      transform: scale(1);
+      box-shadow: 0 0 0 rgba(255, 255, 255, 0.4);
+    }
+    50% {
+      transform: scale(1.05);
+      box-shadow: 0 0 20px rgba(255, 255, 255, 0.8);
+    }
+    100% {
+      transform: scale(1);
+      box-shadow: 0 0 0 rgba(255, 255, 255, 0.4);
+    }
+  }

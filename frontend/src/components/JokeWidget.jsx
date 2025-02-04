@@ -33,7 +33,7 @@ export default function JokeWidget() {
   };
 
   return (
-    <div className="jokeContainer">
+    <div className="jokeContainer w-full">
       <h2 className="jokeHeader">Daily dose of humor:</h2>
       <p className="jokeText">"{joke.joke}"</p>
     </div>

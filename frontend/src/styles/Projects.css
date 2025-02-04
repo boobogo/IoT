@@ -8,6 +8,8 @@
   flex-direction: column;
   justify-content: space-around;
   gap: 20px;
+  padding: 10px;
+  margin-bottom: 1.5rem;
 }
 
 .project-card{
@@ -29,12 +31,15 @@
   display: block;
 }
 
-.project-card img{
+.project-image{
   width: 60%;
   height: auto;
   border-radius: 50%;
   margin-top: 30px;
   object-fit: cover;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 .left-align-stack {
   text-align: left;
@@ -54,11 +59,11 @@
   color: inherit;
   text-decoration: none;
   transition: color 0.3s, transform 0.3s ease;
-  color: darkblue;
+  color: --text-color;
   text-align: left;
 }
 .project-link:hover {
-  transform: scale(1.01);
+  transition: scale(1.01);
   color: #0056b3;
 }
 

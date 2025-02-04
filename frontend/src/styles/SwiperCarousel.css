@@ -1,4 +1,5 @@
 .mySwiper {
     width: 100%;  /* Make it take 80% of the screen width */
-    padding: 40px 0; /* Adds some top & bottom space */
+    padding: 40px 0; /* Adds some top & bottom space */;
+    min-height: 500px; /* Minimum height of 500px */
   }

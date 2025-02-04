@@ -18,7 +18,7 @@
   line-height: 1.6;
   font-size: 1.2rem;
   text-align: justify;
-  color: #080808;
+  color: --text-color;
   padding: 30px;
 }
 
