@@ -1,0 +1,54 @@
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: my-ingress
+  annotations:
+    nginx.ingress.kubernetes.io/rewrite-target: /
+    
+spec:
+  rules:
+  - host: bold.servebeer.com
+    http:
+      paths:
+      - path: /
+        pathType: Prefix
+        backend:
+          service:
+            name: front-end-service
+            port:
+              number: 80
+      - path: /contact
+        pathType: Prefix
+        backend:
+          service:
+            name: front-end-service
+            port:
+              number: 80
+      - path: /projects
+        pathType: Prefix
+        backend:
+          service:
+            name: front-end-service
+            port:
+              number: 80
+      - path: /IoT
+        pathType: Prefix
+        backend:
+          service:
+            name: front-end-service
+            port:
+              number: 80
+      - path: /algo
+        pathType: Prefix
+        backend:
+          service:
+            name: front-end-service
+            port:
+              number: 80
+      - path: /trade
+        pathType: Prefix
+        backend:
+          service:
+            name: front-end-service
+            port:
+              number: 80
