@@ -3,7 +3,7 @@ kind: Deployment
 metadata:
   name: front-end
 spec:
-  replicas: 1
+  replicas: 1ku
   selector:
     matchLabels:
       app: front-end
@@ -17,8 +17,3 @@ spec:
           image: boobogo/my-frontend:latest
           ports:
             - containerPort: 80
-          resources:
-            requests:
-              cpu: "30m"
-            limits:
-              cpu: "50m"

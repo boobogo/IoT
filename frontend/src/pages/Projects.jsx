@@ -1,6 +1,6 @@
 import React from "react";
 import "../styles/Projects.css";
-import iotImage from "../images/iot2.jpg";
+import iotImage from "../images/iot2.webp";
 import algoImage from "../images/algo.webp";
 import ProjectCard from "../components/ProjectCard";
 

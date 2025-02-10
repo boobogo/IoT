@@ -3,8 +3,8 @@ import { MdMail, MdPhone, MdLink, MdLocationOn } from "react-icons/md";
 
 export default function Contact() {
   return (
-    <div className="contact mt-8 px-4 py-8 bg-bg-secondary">
-      <Card className="max-w-md mx-auto bg-bg-primary text-text-primary">
+    <div className="contact mt-8 px-4 py-8">
+      <Card className="max-w-md mx-auto">
         <CardHeader>
           <CardTitle className="text-2xl">Bold-Erdene Bayaraa</CardTitle>
         </CardHeader>
